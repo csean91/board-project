@@ -1,0 +1,44 @@
+package com.example.oop.order04;
+
+import org.springframework.scheduling.support.SimpleTriggerContext;
+
+import java.util.Objects;
+
+/**
+ * packageName    : com.example.oop.order04
+ * fileName       : Cook
+ * author         : swch
+ * date           : 2022-09-16
+ * description    :
+ * ===========================================================
+ * NOTE
+ * 요리 객체
+ */
+public class Cook {
+    private String name;
+    private int price;
+
+    public Cook(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public Cook(MenuItem menuItem) {
+        this.name = menuItem.getName();
+        this.price = menuItem.getPrice();
+    }
+
+    // 객체간의 비교를 위해 equals and hash code가 필요함
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cook cook = (Cook) o;
+        return price == cook.price && Objects.equals(name, cook.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price);
+    }
+}

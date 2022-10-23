@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ReflectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-04T23:24:21" hostname="NSWCH01" time="0.068">
+  <properties/>
+  <testcase name="heap 영역에 로드되어 있는 클래스" classname="com.example.ReflectionTest" time="0.068"/>
+  <system-out><![CDATA[08:24:21.995 [Test worker] DEBUG com.example.ReflectionTest - clazz1 : [class com.example.model.User]
+08:24:21.998 [Test worker] DEBUG com.example.ReflectionTest - clazz2 : [class com.example.model.User]
+08:24:21.998 [Test worker] DEBUG com.example.ReflectionTest - clazz3 : [class com.example.model.User]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
